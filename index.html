@@ -23,7 +23,7 @@
       iframe{      
         display: block;  /* iframes are inline by default */   
         height: 100vh;  /* Set height to 100% of the viewport height */   
-        width: 100vh;  /* Set width to 100% of the viewport width */     
+        width: 25vh;  /* Set width to 100% of the viewport width */     
         border: none; /* Remove default border */
       }
     </style>
@@ -33,6 +33,8 @@
     <table style="width:100%; height: 100%; color: white;">
       <tr>
         <th>Links</th>
+        <th>Live Score</th>
+        <th>Results</th>
         <th>Schedule</th>
       </tr>
       <tr>
@@ -58,8 +60,15 @@
             <li><a href="https://www.sportsala.cc">https://www.sportsala.cc</a></li>
           </ul>
         </td>
-        <td><iframe src="https://www.espncricinfo.com/live-cricket-match-schedule-fixtures?team=6&quick_class_id=men" width="100%" height="100%">
-        </iframe></td>
+        <td>
+          <iframe src="https://www.espncricinfo.com/live-cricket-score?team=6" width="100%" height="100%"></iframe>
+        </td>
+        <td>
+          <iframe src="https://www.espncricinfo.com/live-cricket-match-results?team=6" width="100%" height="100%"></iframe>
+        </td>
+        <td>
+          <iframe src="https://www.espncricinfo.com/live-cricket-match-schedule-fixtures?team=6&quick_class_id=men" width="100%" height="100%"></iframe>
+        </td>
       </tr>
     </table>
   </body>
